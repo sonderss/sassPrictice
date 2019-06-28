@@ -1,0 +1,48 @@
+$hightLight:#F90;
+$width:1280px;
+$light-color:red;
+nav{
+    $width:1000px;
+    width: $width;
+    color: $hightLight;
+}
+.border{
+    border: 1px solid $hightLight;
+}
+.hightColor{
+    color: $light_color;
+}
+#connet{
+    width: $width;
+    background: #ff0;
+    article{
+        color: $hightLight;
+        font-size: 10px;
+        p{
+            width: 100px;
+        }
+    }
+    div{
+        width: $width;
+        height: 20px;
+    }
+}
+#connect a{
+    
+    &:hover{
+        color: #FF9900;
+    }
+}
+
+#connect aside{
+    background: red;
+    body.ie &{
+        background: gray;
+    }
+}
+#div .opacity{
+    opacity: 0.5;
+    body.ie &{
+        filter: alpha(opacity=50);
+    }
+}
